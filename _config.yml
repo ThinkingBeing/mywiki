@@ -1,8 +1,8 @@
 title: 高飞de好文笔记
 description: 看到好文章，用LLM深度解读，将结果记录到这里
 
-# 移除 remote_theme，使用 GitHub Pages 默认主题
-theme: jekyll-theme-primer
+# 使用 hacker 主题
+theme: jekyll-theme-hacker
 
 # 隐藏 RSS 链接
 plugins:
