@@ -1,23 +1,21 @@
 ---
 ---
 
-// 使用 minima 主题默认样式，不需要额外导入
-
 /**
  * 自定义样式覆盖
  */
 
-/* 隐藏顶部导航中不需要的链接 */
+/* 隐藏顶部导航所有链接 */
 .site-nav .page-link {
-  display: none;
+  display: none !important;
 }
 
 /* 隐藏底部左下角的重复标题 */
 .site-footer .site-title {
-  display: none;
+  display: none !important;
 }
 
 /* 隐藏文章页面的重复标题 */
 .page-content .page-title {
-  display: none;
+  display: none !important;
 }
