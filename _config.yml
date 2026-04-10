@@ -1,12 +1,17 @@
 title: 高飞de好文笔记
 description: 看到好文章，用LLM深度解读，将结果记录到这里
 
-remote_theme: jekyll/minima
+# 锁定到稳定版本（避免 master 分支破坏性更新）
+remote_theme: jekyll/minima@v2.5.1
 
 minima:
   date_format: "%Y年%m月%d日"
   social_links:
     github: ThinkingBeing
+  # 启用文章摘要显示
+  show_excerpts: true
+  # 导航页面（移除所有页面，使用纯静态导航）
+  nav_pages: []
 
 collections:
   reads:

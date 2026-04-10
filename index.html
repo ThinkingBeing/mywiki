@@ -1,11 +1,14 @@
 ---
 layout: home
 title: 高飞de好文笔记
-list_title: 文章列表
+list_title: 好文笔记
 ---
 
+<!-- 自定义文章列表：显示 reads collection 中的文章 -->
+{% assign reads = site.reads | sort: "date" | reverse %}
+{% if reads.size > 0 %}
 <ul class="post-list">
-  {%- for post in site.reads -%}
+  {%- for post in reads -%}
   <li>
     <span class="post-meta">{{ post.date | date: "%Y年%m月%d日" }}</span>
     <h3>
@@ -13,7 +16,12 @@ list_title: 文章列表
         {{ post.title | escape }}
       </a>
     </h3>
+    {% if post.description %}
     <p>{{ post.description }}</p>
+    {% endif %}
   </li>
   {%- endfor -%}
 </ul>
+{% else %}
+<p>暂无文章，敬请期待...</p>
+{% endif %}
