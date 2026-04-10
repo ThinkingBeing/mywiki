@@ -1,3 +1,10 @@
+---
+layout: page
+title: Scaling Managed Agents
+description: Anthropic 如何设计可适应未来模型演进的 Agent 系统
+date: 2026-04-10
+---
+
 # Scaling Managed Agents: Decoupling the brain from the hands
 
 > 来源: Anthropic Engineering Blog | https://www.anthropic.com/engineering/managed-agents | 2026年4月
