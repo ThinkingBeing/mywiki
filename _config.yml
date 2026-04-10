@@ -1,0 +1,15 @@
+title: 我的阅读笔记
+description: 技术文章的深度解读与思考
+theme: jekyll-theme-minimal
+
+markdown: GFM
+collections:
+  reads:
+    output: true
+
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
