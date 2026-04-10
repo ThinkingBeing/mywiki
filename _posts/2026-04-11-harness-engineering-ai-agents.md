@@ -29,7 +29,7 @@ categories: harness
 
 3. **护栏（Guardrails）**：物理阻止代理违反约束 — 文件超大小限制则linter拒绝，结构测试失败则无法合并PR。错误信息需包含修复指导。
 
-4. **熵管理（Entropy Management）**：AI会复制坏模式，产生"AI垃圾"。需要定期的清理代理扫描代码库，修复偏离黄金原则的问题。
+4. **熵管理（Entropy Management）**：AI会复制坏模式，产生"AI垃圾"。需要定期的清理代理扫描代码，防止"AI垃圾"累积。
 
 ## 实践效果
 
