@@ -1,13 +1,14 @@
 title: 高飞de好文笔记
-description: LLM针对好文章的解读笔记
-theme: jekyll-theme-minimal
+description: 看到好文章，用LLM深度解读，将结果记录到这里
 
-markdown: GFM
+remote_theme: jekyll/minima   # 或保留 @1e8a445 如果你想锁定版本
+
 collections:
   reads:
     output: true
 
 plugins:
+  - jekyll-remote-theme      # 推荐添加
   - jekyll-relative-links
 
 relative_links:
