@@ -4,6 +4,7 @@ github_url: https://github.com/ThinkingBeing/mywiki
 
 # 使用 hacker 主题
 theme: jekyll-theme-hacker
+show_downloads: false
 
 plugins:
   - jekyll-relative-links

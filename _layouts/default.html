@@ -12,19 +12,14 @@
     {% endif %}
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
     <header>
       <div class="container">
-        {% if site.github_url %}
-          <a id="a-github" href="{{ site.github_url }}">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-        {% endif %}
-        {% if site.title %}
-          <a href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
-        {% endif %}
+        <a id="a-title" href="{{ '/' | relative_url }}">
+          <h1>{{ site.title | escape }}</h1>
+        </a>
+        <h2>{{ site.description | escape }}</h2>
       </div>
     </header>
 
