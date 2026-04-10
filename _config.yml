@@ -10,9 +10,10 @@ minima:
     github: ThinkingBeing
   # 启用文章摘要显示
   show_excerpts: true
-  # 导航页面（移除所有页面，使用纯静态导航）
+  # 导航页面（清空默认导航）
   nav_pages: []
 
+# 使用标准 _posts 目录
 collections:
   reads:
     output: true

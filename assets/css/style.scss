@@ -1,0 +1,25 @@
+---
+---
+
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+
+/**
+ * 自定义样式覆盖
+ */
+
+/* 隐藏顶部导航中不需要的链接 */
+.site-nav .page-link {
+  display: none;
+}
+
+/* 隐藏底部左下角的重复标题 */
+.site-footer .site-title {
+  display: none;
+}
+
+/* 隐藏文章页面的重复标题 */
+.page-content .page-title {
+  display: none;
+}

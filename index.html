@@ -4,11 +4,11 @@ title: 高飞de好文笔记
 list_title: 好文笔记
 ---
 
-<!-- 自定义文章列表：显示 reads collection 中的文章 -->
-{% assign reads = site.reads | sort: "date" | reverse %}
-{% if reads.size > 0 %}
+<!-- 自定义文章列表：显示 _posts 中的文章 -->
+{% assign posts = site.posts | sort: "date" | reverse %}
+{% if posts.size > 0 %}
 <ul class="post-list">
-  {%- for post in reads -%}
+  {%- for post in posts -%}
   <li>
     <span class="post-meta">{{ post.date | date: "%Y年%m月%d日" }}</span>
     <h3>
