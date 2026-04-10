@@ -1,27 +1,23 @@
 title: 高飞de好文笔记
 description: 看到好文章，用LLM深度解读，将结果记录到这里
 
-# 锁定到稳定版本（避免 master 分支破坏性更新）
-remote_theme: jekyll/minima@v2.5.1
+# 移除 remote_theme，使用 GitHub Pages 默认主题
+theme: jekyll-theme-primer
 
-minima:
-  date_format: "%Y年%m月%d日"
-  social_links:
-    github: ThinkingBeing
-  # 启用文章摘要显示
-  show_excerpts: true
-  # 导航页面（清空默认导航）
-  nav_pages: []
-
-# 使用标准 _posts 目录
-collections:
-  reads:
-    output: true
-
+# 隐藏 RSS 链接
 plugins:
   - jekyll-remote-theme
   - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-feed
+
+feed:
+  enabled: false
 
 relative_links:
   enabled: true
   collections: true
+
+# 禁用默认的 GitHub Metadata
+github:
+  enabled: false

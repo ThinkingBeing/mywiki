@@ -1,27 +1,32 @@
 ---
-layout: home
+layout: default
 title: 高飞de好文笔记
-list_title: 好文笔记
 ---
 
-<!-- 自定义文章列表：显示 _posts 中的文章 -->
+<style>
+/* 自定义样式 - 隐藏不需要的元素 */
+.site-nav { display: none !important; }
+.feed-subscribe { display: none !important; }
+.site-footer .rss { display: none !important; }
+.site-footer .site-title { display: none !important; }
+.page-header { display: none !important; }
+</style>
+
+<h1>文章列表</h1>
+
+<ul>
 {% assign posts = site.posts | sort: "date" | reverse %}
-{% if posts.size > 0 %}
-<ul class="post-list">
-  {%- for post in posts -%}
+{%- for post in posts -%}
   <li>
-    <span class="post-meta">{{ post.date | date: "%Y年%m月%d日" }}</span>
-    <h3>
-      <a class="post-link" href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
-      </a>
-    </h3>
+    <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    <span style="color: #666;"> - {{ post.date | date: "%Y年%m月%d日" }}</span>
     {% if post.description %}
-    <p>{{ post.description }}</p>
+    <p style="margin-top: 5px; color: #555;">{{ post.description }}</p>
     {% endif %}
   </li>
-  {%- endfor -%}
+{%- endfor -%}
 </ul>
-{% else %}
+
+{% if posts.size == 0 %}
 <p>暂无文章，敬请期待...</p>
 {% endif %}
