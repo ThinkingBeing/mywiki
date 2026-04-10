@@ -1,23 +1,14 @@
 title: 高飞de好文笔记
 description: 看到好文章，用LLM深度解读，将结果记录到这里
+github_url: https://github.com/ThinkingBeing/mywiki
 
 # 使用 hacker 主题
 theme: jekyll-theme-hacker
 
-# 隐藏 RSS 链接
 plugins:
-  - jekyll-remote-theme
   - jekyll-relative-links
   - jekyll-seo-tag
-  - jekyll-feed
-
-feed:
-  enabled: false
 
 relative_links:
   enabled: true
   collections: true
-
-# 禁用默认的 GitHub Metadata
-github:
-  enabled: false

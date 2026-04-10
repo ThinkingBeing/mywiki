@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% if page.title %}
+      <title>{{ page.title | escape }}</title>
+    {% elsif site.title %}
+      <title>{{ site.title | escape }}</title>
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        {% if site.github_url %}
+          <a id="a-github" href="{{ site.github_url }}">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        {% endif %}
+        {% if site.title %}
+          <a href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+        {% endif %}
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        {% if site.github_url %}
+          <a id="a-github" href="{{ site.github_url }}">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        {% endif %}
+        <span>Theme by <a href="https://github.com/pages-themes/hacker">hacker</a></span>
+      </div>
+    </footer>
+  </body>
+</html>
