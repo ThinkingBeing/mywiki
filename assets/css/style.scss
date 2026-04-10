@@ -1,9 +1,8 @@
 ---
 ---
 
-@import
-  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
-  "minima/initialize";
+// minima v2.5.1 样式导入
+@import "minima/initialize";
 
 /**
  * 自定义样式覆盖
