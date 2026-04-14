@@ -10,7 +10,7 @@ source: intuitiveml
 
 # 为什么你的"AI-First"策略可能是错的
 
-> 来源: @intuitiveml | https://x.com/intuitiveml | 作者: Peter Pang (CREAO 创始人)
+> 来源: @intuitiveml | https://x.com/intuitiveml/article/2043545596699750791 | 作者: Peter Pang (CREAO 创始人)
 
 ## 核心观点
 
