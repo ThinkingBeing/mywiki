@@ -4,6 +4,8 @@ title: Claude Code 近半年更新历史分类解读
 description: 对 Claude Code (Harness Agent) 近半年更新日志进行分类，重点解读 Agent 相关功能更新
 date: 2026-04-11
 categories: claude-code
+author: 高飞
+source: code.claude.com
 ---
 
 # Claude Code (Harness Agent) 近半年更新历史分类解读

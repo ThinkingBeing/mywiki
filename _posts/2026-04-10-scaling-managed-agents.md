@@ -4,6 +4,8 @@ title: Scaling Managed Agents
 description: Anthropic 如何设计可适应未来模型演进的 Agent 系统
 date: 2026-04-10
 categories: anthropic
+author: Anthropic
+source: anthropic.com/engineering
 ---
 
 # Scaling Managed Agents: Decoupling the brain from the hands

@@ -4,6 +4,8 @@ title: "Harness design for long-running application development"
 description: Anthropic 如何设计三代理架构（Planner、Generator、Evaluator）来解决长时间运行Agent的上下文丢失和自我评估失准问题
 date: 2026-04-10
 categories: anthropic
+author: Anthropic
+source: anthropic.com/engineering
 ---
 
 # Harness design for long-running application development

@@ -4,6 +4,8 @@ title: "The Anatomy of an Agent Harness"
 description: 解析 Agent 的核心组成部分：Model + Harness，Harness 如何通过文件系统、代码执行、内存管理、上下文工程等机制将模型智能转化为实用系统
 date: 2026-04-10
 categories: langchain
+author: LangChain
+source: python.langchain.com
 ---
 
 # The Anatomy of an Agent Harness
