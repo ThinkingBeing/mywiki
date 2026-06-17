@@ -2,7 +2,7 @@
 layout: post
 title: "Loop Engineering：从手写提示词到设计自主 Agent 循环"
 description: "Lushbinary 文章认为 AI 编程的杠杆点正从单次提示词转向可调度、可验证、有记忆的外层循环；真正的挑战不是让 Agent 更自动，而是把验证、状态、隔离和人类判断嵌入循环。"
-date: 2026-06-18
+date: 2026-06-17
 categories: AI Agents
 ---
 
