@@ -15,11 +15,12 @@ title: 高飞de好文笔记
 <h1>文章列表</h1>
 
 <ul>
-{% assign posts = site.posts | sort: "date" | reverse %}
+{% assign posts = site.posts | sort: "created_at" | reverse %}
 {%- for post in posts -%}
   <li>
     <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-    <span style="color: #666;"> - {{ post.date | date: "%Y年%m月%d日" }}</span>
+    <span style="color: #666;"> - 解读: {{ post.created_at | default: post.date | date: "%Y年%m月%d日 %H:%M" }}</span>
+    <span style="color: #888; font-size: 0.9em;">（原文: {{ post.date | date: "%Y年%m月%d日" }}）</span>
     {% if post.description %}
     <p style="margin-top: 5px; color: #555;">{{ post.description }}</p>
     {% endif %}

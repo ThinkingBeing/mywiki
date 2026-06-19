@@ -3,6 +3,7 @@ layout: post
 title: "Infrastructure noise: How config creates false signals in agentic coding evals"
 description: 揭示基础设施配置如何影响Agent编程评估结果，6%的分数差异可能只是资源配置差异而非真实能力差距
 date: 2026-04-10
+created_at: 2026-04-10 19:57:19 +0800
 categories: anthropic
 author: Anthropic
 source: anthropic.com/engineering

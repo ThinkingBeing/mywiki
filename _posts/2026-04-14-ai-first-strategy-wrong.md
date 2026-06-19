@@ -3,6 +3,7 @@ layout: post
 title: 为什么你的"AI-First"策略可能是错的
 description: CREAO 创始人分享：如何从"用 AI 辅助开发"到"彻底重建工程流程"，以及 AI-first 与 AI-assisted 的本质区别
 date: 2026-04-14
+created_at: 2026-04-14 17:23:08 +0800
 categories: agent
 author: Peter Pang
 source: intuitiveml

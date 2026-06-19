@@ -3,6 +3,7 @@ layout: post
 title: "Query Loop：代理系统的心跳 - Claude Code 架构深度解读"
 description: "Harness Engineering 系列文章深度解读 Claude Code 的核心架构。代理系统的成熟不在于模型多强，而在于能否维持可恢复的执行循环。Query Loop 正是这种「心跳」机制的核心实现。"
 date: 2026-04-14
+created_at: 2026-04-14 07:56:02 +0800
 categories: claude-code
 ---
 

@@ -3,6 +3,7 @@ layout: post
 title: "Anthropic：面向长时间应用开发的 Harness 设计"
 description: "Anthropic 通过 Planner、Generator、Evaluator 三代理架构，解决长时间自主编码中的上下文衰退、自我评估失真和复杂应用验证问题；核心启发是：Agent 能力越强，Harness 越要围绕真实瓶颈动态简化与重构。"
 date: 2026-04-10
+created_at: 2026-04-10 19:52:09 +0800
 categories: anthropic
 author: Prithvi Rajasekaran
 source: anthropic.com/engineering

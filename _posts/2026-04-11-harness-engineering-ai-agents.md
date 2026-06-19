@@ -3,6 +3,7 @@ layout: post
 title: Harness Engineering - AI Agent 可靠的工程师
 description: Harness engineering 是将不可靠的AI编码代理变成生产系统的学科，核心是通过确定性脚本、护栏和状态管理让AI做决策而非执行
 date: 2026-04-11
+created_at: 2026-04-11 07:12:48 +0800
 categories: harness
 author: Fran
 source: strategizeyourcareer.com
