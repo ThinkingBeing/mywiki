@@ -19,7 +19,7 @@ categories: AI-Agent
 - **篇幅**: 51 页
 - **主题**: Vibe Coding、Agentic Engineering、AI 驱动的软件开发生命周期、Context Engineering、Harness Engineering、AI coding agents、开发者角色转型
 - **原始文件**: 用户提供的 Google Drive PDF
-- **本地备份**: `/home/user/hermes/downloads/the-new-sdlc-with-vibe-coding.pdf`
+- **原始链接**: [Google Drive PDF](https://drive.google.com/file/d/1IR7CddF_2FyQo_PdfBNTaEA50EGiVt2r/view?usp=drivesdk)
 
 ## 2. 文档要解决的核心问题
 
