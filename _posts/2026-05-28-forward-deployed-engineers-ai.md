@@ -192,7 +192,29 @@ Palantir 曾经让 Deltas 数量超过传统软件工程师，这说明：**对�
 
 这也是为什么 FDE 会成为高薪岗位：它不是单一能力，而是工程、产品、交付、客户成功和业务理解的复合体。
 
-## 7. 进一步延伸：FDE 可能带来的组织变化
+## 7. 补充：从 Paraform 文章看 Forward Deployed AI Engineer 的岗位画像
+
+> 补充来源：[What Is a Forward Deployed AI Engineer? The Role Every AI Company Needs in May 2026](https://www.paraform.com/blog/forward-deployed-ai-engineer)
+> 来源：Paraform Blog
+> 发布时间：2026-05-14
+
+Paraform 的文章从招聘市场角度进一步解释了 **Forward Deployed AI Engineer** 这个角色。相比 The New Stack 更关注 OpenAI、Anthropic 为什么要组建 FDE 团队，Paraform 这篇更像是对岗位本身的定义：这个角色到底做什么、和传统 Forward Deployed Engineer 有什么区别、和 Machine Learning Engineer 有什么区别，以及为什么薪酬和招聘需求快速上升。
+
+它最有价值的补充，是把 **AI 版本的 FDE** 和传统 FDE 做了区分。传统 FDE 主要处理软件和数据基础设施的客户现场部署，例如 API 集成、数据库配置、Dashboard 定制、权限系统打通等。Forward Deployed AI Engineer 则在这些工作之上，额外面对 LLM / Agent 系统的不确定性：模型输出非确定性、Prompt Chain 需要调优、RAG 管道需要持续评估、幻觉和错误输出需要 guardrails，模型行为还需要 observability 和质量评分。
+
+Paraform 文章还清楚地区分了 Forward Deployed AI Engineer 和 ML Engineer：**ML Engineer 优化模型本身，Forward Deployed AI Engineer 优化客户现场的业务结果。** 前者的反馈循环通常来自 benchmark、loss curve、offline evaluation；后者的反馈循环来自真实客户环境中的部署效果、用户信任、业务流程适配、生产稳定性和业务指标。
+
+从招聘市场看，这个岗位之所以稀缺，是因为它要求候选人同时具备三类能力：
+
+1. **生产级工程能力**：能写 Python / TypeScript，理解云基础设施、API、数据库、监控、权限和系统集成。
+2. **AI 应用工程能力**：熟悉 LLM、Prompt Engineering、RAG、Agent、Eval、Guardrails、AI Observability 等新栈。
+3. **客户现场推进能力**：能和业务方沟通，把模糊需求转成可交付系统，在混乱环境中推动上线，并管理客户对 AI 不确定性的预期。
+
+不过，Paraform 本身是招聘平台，所以它关于薪资、岗位增长和招聘周期的叙事带有明显的市场营销目的。它适合作为岗位画像和招聘市场的补充材料，而不适合作为独立论证 FDE 趋势的主文章。更稳妥的理解是：The New Stack 解释了 **为什么企业 AI 需要 FDE 这种组织机制**，Paraform 则补充了 **这种机制落到人才市场后，会形成怎样的岗位定义和能力模型**。
+
+这也进一步强化了本文的核心判断：真正稀缺的不是会调用 LLM API 的工程师，而是能把 AI 系统放进客户真实业务流程，并对生产结果负责的人。
+
+## 8. 进一步延伸：FDE 可能带来的组织变化
 
 我认为 FDE 的兴起可能会推动 AI 公司组织结构发生变化。
 
@@ -202,7 +224,7 @@ Palantir 曾经让 Deltas 数量超过传统软件工程师，这说明：**对�
 
 在这种组织里，FDE 是连接客户现场和产品研发的关键节点。它不是简单的“交付团队”，而是：**企业 AI 公司获取真实需求、验证产品价值、发现可复用场景、提高客户成功率的前线传感器。**
 
-## 8. 这篇文章对 AI Agent 落地的特殊启发
+## 9. 这篇文章对 AI Agent 落地的特殊启发
 
 如果把这篇文章放到 AI Agent 语境下，它的意义更明显。
 
@@ -214,7 +236,7 @@ Agent 系统比普通 LLM 应用更需要 FDE，因为 Agent 不只是回答问�
 
 所以，未来 AI Agent 公司的核心竞争力可能不只是“谁的 agent 框架更强”，而是：**谁能更快把 agent 安全、可靠、可审计地嵌入客户业务流程。** 这正是 FDE 的战场。
 
-## 9. 可操作的实践框架：如何像 FDE 一样落地一个 AI 项目
+## 10. 可操作的实践框架：如何像 FDE 一样落地一个 AI 项目
 
 ### 第一步：不要从模型开始，从业务流程开始
 
@@ -238,7 +260,7 @@ AI 系统上线后要重点观察：用户是否真的使用，用户在哪些�
 
 否则 FDE 团队会变成永远忙不过来的交付团队。
 
-## 10. 总结
+## 11. 总结
 
 这篇文章的核心价值在于，它指出了企业 AI 当前最关键的矛盾：**模型越来越强，但企业 AI 的真实价值并不会自动发生。**
 
