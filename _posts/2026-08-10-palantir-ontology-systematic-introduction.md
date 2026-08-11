@@ -2,7 +2,7 @@
 layout: post
 title: "Palantir Ontology 系统介绍：企业 AI 的语义操作层"
 description: "基于 Palantir 官方文档，系统介绍 Ontology 如何把企业数据、业务对象、关系、逻辑、权限、动作和 AI Agent 连接成可运行的数字操作层。"
-date: 2026-08-11
+date: 2026-08-10
 created_at: 2026-08-11 07:52:21 +0800
 categories: AI Agents
 source: Palantir 官方文档
