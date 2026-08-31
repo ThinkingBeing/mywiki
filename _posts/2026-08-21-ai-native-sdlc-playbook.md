@@ -9,8 +9,7 @@ source: https://claude.com/blog/the-ai-native-sdlc-playbook
 author: Louis Claxton
 ---
 
-
-## Code is no longer the bottleneck（代码不再是瓶颈）
+## 1、Code is no longer the bottleneck（代码不再是瓶颈）
 
 Organizations have started using AI to write code at a speed unthinkable one year ago, yet the processes around the code haven't changed at the same pace.
 > 组织已经开始用 AI 以一年前难以想象的速度编写代码，但围绕代码的流程并没有以同样的速度变化。
@@ -46,7 +45,7 @@ To better realize the productivity gains of and secure agentic AI, the tradition
 What is an AI-native SDLC?
 > ---
 
-## Table of contents（什么是 AI 原生 SDLC？）
+## 2、Table of contents（什么是 AI 原生 SDLC？）
 
 The AI-native SDLC is a reimagined process that combines the old control objectives with new enforcement. Instead of a linear flow, the process becomes a loop, and AI is embedded at each point. The AI-native SDLC promotes automated handover and triggering of subsequent plays, helping to address the manual and clunky nature of handoff between the phases of the traditional SDLC.
 > AI 原生 SDLC 是一种重新构想的软件开发流程：它将旧有的控制目标与新的执行方式结合起来。流程不再是线性流转，而是变成一个循环，并且 AI 被嵌入到每一个节点。AI 原生 SDLC 推动自动化交接和后续动作的触发，从而解决传统 SDLC 各阶段之间手动、笨重的交接问题。
@@ -54,7 +53,7 @@ The AI-native SDLC is a reimagined process that combines the old control objecti
 You'll also hear this shift called the agentic SDLC, the AI SDLC, or simply agentic software development — the labels differ, but they describe the same thing.
 > 你也会听到类似说法，例如智能体式 SDLC、AI SDLC，或简单称为智能体式软件开发。叫法不同，但描述的是同一件事。
 
-### Plays（六个阶段的变化）
+### 2.1、Plays（Plays：可执行动作）
 
 The table below highlights the ends of the spectrum between traditional SDLC and AI-native SDLC, supported by Claude. Most organizations sit somewhere between the two columns.
 > 传统 SDLC 与 Claude 支持的 AI 原生 SDLC 可以被看作一条光谱的两端。多数组织会处在两者之间。
@@ -80,7 +79,7 @@ Humans remain accountable for every decision that requires judgment. In the agen
 Every stage commits an artifact the next stage can read. Together, the intent, the spec, the plan, the diff and the review findings are the audit trail.
 > ---
 
-## Stage 1 — Plan（Plays：可执行动作）
+## 3、Stage 1 — Plan（Plays：可执行动作）
 
 The plays are the core of the playbook and are grouped into six non-linear stages (Plan, Design, Build, Test, Deploy, Maintain), which together cover the complete lifecycle.
 > 这些 play 是本手册的核心，被分为六个非线性阶段：Plan、Design、Build、Test、Deploy、Maintain，合起来覆盖完整生命周期。
@@ -111,12 +110,12 @@ First, you prompt each step by hand with the end state being a loop in which eac
 The plays are listed with stage; the arrows give the order to adopt them in. The two are not the same. Start with any clay play — nothing points into it, so it needs nothing first. For any other play, the arrows pointing into it are the plays to adopt before it. 01 Plan
 > ---
 
-# Stage 2 — Design（01 规划：Plan）
+# 1、Stage 2 — Design（01 规划：Plan）
 
 Ideas stop waiting for someone to write them up. Intent is captured once, in the originator's own words, as a version-controlled artifact the next stage can act on.
 > 想法不再等待某个人把它写出来。意图被一次性捕获，使用发起人自己的语言，形成一个受版本控制、下个阶段可直接操作的工件。
 
-## Stage 3 — Build（捕获为 `intent.md`）
+## 1.1、Stage 3 — Build（捕获为 `intent.md`）
 
 The intent.md , which kicks off the software development process can enter through different routes. A person has an idea, a ticket is filed, or an incident is surfaced via an alert (see Stage 6: Maintenance).
 > 启动软件开发流程的 `intent.md` 可以来自不同路径：某个人有一个想法、有人提交了工单，或者某个事件通过告警浮现出来（见第 6 阶段：维护）。
@@ -135,7 +134,7 @@ Traditional An idea passes through backlog entries, user stories, story points, 
 AI-native The originator brainstorms with Claude and writes the result down as intent.md , a proto-spec in the originator's own terms. The artifact contains what is wanted, why, and under which constraints. Repeat processes are encoded via skills.
 > - **AI 原生方式：** 发起人与 Claude 头脑风暴，并将结果写成 `intent.md`，即用发起人自己的语言表达的原型规格。该工件包含想要什么、为什么要做、以及约束条件。重复流程通过 skills 编码。
 
-### Stage 4 — Test（如何开始）
+### 1.1.1、Stage 4 — Test（如何开始）
 
 Prerequisites None.
 > **前置条件：** 无。
@@ -149,7 +148,7 @@ Setting this up is a one-time task for the platform or engineering team. A techn
 Once the repository exists, contributors without git experience don't need to use git directly. Instead a connector to the version-control system (e.g. GitHub) lets Claude commit markdown files on their behalf from claude.ai or Cowork.
 > 仓库建立后，没有 git 经验的贡献者不需要直接使用 git。相反，连接到版本控制系统（如 GitHub）的 connector 可以让 Claude 代表他们从 claude.ai 或 Cowork 提交 Markdown 文件。
 
-### Stage 5 — Deploy（如何执行）
+### 1.1.2、Stage 5 — Deploy（如何执行）
 
 The originator describes the problem to Claude in their own words. The originator may describe what they cannot do today, who is affected by the idea, what better looks like, or what is out of scope. No formal language is required.
 > 1. 发起人用自己的语言向 Claude 描述问题：今天做不到什么，谁受影响，更好的状态是什么，哪些内容不在范围内。不需要正式语言。
@@ -162,7 +161,7 @@ The originator corrects anything Claude misunderstood.
 Commit intent.md to the shared home. Author and timestamp join the record, and the product owner picks the idea up from there.
 > 5. 将 `intent.md` 提交到共享位置。作者和时间戳进入记录，产品负责人从这里接手。
 
-# Intent: claims status self-service
+# 2、Intent: claims status self-service（理赔状态自助服务意图）
 > 示例：
 
 ```md
@@ -186,14 +185,14 @@ No new PII in the portal session. Existing authentication only.
 Do third-party loss adjusters need access too?
 ```
 
-### Stage 6 — Maintain（治理考虑）
+### 2.1、Stage 6 — Maintain（治理考虑）
 
 Author: J. Ortiz (claims operations). Status: draft.
 > 证据是已提交的 `intent.md`，它列出了作者、时间戳和完整修订历史，并记录在 intent 存放位置的 git 历史中。产品负责人进行批准，而让 intent 进入第 2 阶段设计的接受或拒绝决定，会以 merge 或关闭 review 的形式记录下来。
 
-### Closing thoughts（如何衡量）
+### 2.2、Closing thoughts（结语）
 
-## Problem
+## 2.1、Problem（问题）
 > - **领先指标：** 从第一次对话到提交 `intent.md` 的时间，可从 intent 存放位置的 git 历史读取。预期应从多周的需求启发和 refinement 周期缩短到数小时。
 Customers phone the contact center to ask where their claim is.
 > - **滞后指标：** `intent.md` 的存活率，即有多少 `intent.md` 被产品负责人接受进入第 2 阶段设计，而不是关闭。接受或拒绝通过工件合并或 review 关闭记录。另外，统计同一变更在第一个 `spec.md` 提交之后，对 `intent.md` 做出的修改数量。
@@ -201,36 +200,36 @@ Customers phone the contact center to ask where their claim is.
 Handlers spend roughly a third of call time on status-only queries.
 > ---
 
-# The shifts across the six stages of an AI-native SDLC（02 设计：Design）
+# 3、The shifts across the six stages of an AI-native SDLC（六个阶段的变化）
 
-## Proposed outcome
+## 3.1、Proposed outcome（预期结果）
 > 需求和设计合并到一次会话中。政策在写规格时就被应用，而不是几周后在评审中才被发现。
 
-## Capture as intent.md（需求与设计）
+## 3.2、Capture as intent.md（捕获为 `intent.md`）
 
 Customers see claim status, next step and expected date in the portal.
 > 在产品负责人批准后，Claude 会读取已接受的 `intent.md`，生成需求与设计规格。这一过程由组织针对品牌、安全、合规和 UX 编写的 skills 引导。
 
-## Affected users and systems
+## 3.3、Affected users and systems（受影响的用户和系统）
 > 产品负责人评审这个规格，但不亲自编写它。该流程的目标，是创建一个工程团队可以据此规划的规格，并标记出值得关注的区域。
 
 Claims handlers, portal team, claims-core API.
 > 前端工作是最清晰的例子。`intent.md` 被接受后，产品负责人可以在 Claude Design（beta）中基于 `intent.md` 生成设计 mock，迭代 mock，然后将其导出到 Claude Code 进行构建。
 
-## Constraints
+## 3.4、Constraints（约束）
 > - **传统方式：** 需求和设计由不同团队分阶段完成。分析师把想法形式化为需求，设计师再把这些需求解析回设计。分离有助于问责，但速度慢且信息有损。
 No new PII in the portal session. Existing authentication only.
 > - **AI 原生方式：** 两个阶段在一次提示会话中完成。Claude 读取 `intent.md`，在组织 skills 的约束下生成需求和设计规格，并标记关注点。
 
-### Getting started（如何开始）
+### 3.4.1、Getting started（如何开始）
 
-## Open questions
+## 3.5、Open questions（开放问题）
 > **前置条件：** 已编写 `intent.md`；品牌、安全、合规和 UX 政策已写成 skills。
 
 Do third-party loss adjusters need access too? Governance considerations
 > **基础设施：** 有 Claude 访问权限的产品负责人。不要求工程技能。
 
-### How to execute it（如何执行）
+### 3.5.1、How to execute it（如何执行）
 
 The evidence is the committed intent.md , which lists the author, the timestamp and the full revision history. It's logged in the git history of the intent home. The product owner approves, and the accept or reject decision that sends the intent into Stage 2: Design is recorded as the merge or the closing review.
 > 1. 产品负责人开启一个会话，确保组织 skills 可用，并附上 `intent.md`。
@@ -252,12 +251,12 @@ The product owner reviews that spec, but doesn't write it. The goal of this proc
 Read the attached intent.md and produce a requirements and design spec for integrating it into our existing codebase. Apply the skills available to you so the plan conforms to our brand guidelines, security policies and UX standards. Document the spec fully as spec.md, ready to hand to the engineering team. Describe clearly any areas of concern, especially where you cannot satisfy contradicting policies.
 ```
 
-### How to measure it（治理考虑）
+### 3.5.2、How to measure it（如何衡量）
 
 Front-end work is the clearest example. Once the intent.md is accepted, the product owner mocks the design up in Claude Design (beta) from the intent.md , iterates on the mock, and then exports it to Claude Code to build.
 > 实时政策在规格编写过程中被读取和应用，而不是几周后在评审中才被发现。组织 skills 作为 spec 的约束。spec、生成它的 prompt，以及当时生效的 skill 版本，全部记录在版本控制中。产品负责人签署 spec，并将被标记的问题路由给对应政策 owner。
 
-### Leading indicator（如何衡量）
+### 3.5.3、Leading indicator（如何衡量）
 
 Traditional Requirements and design are separate phases run by separate teams. Analysts formalize the idea into requirements and designers then parse those back into a design. The separation exists for accountability, but it is slow and lossy.
 > - **领先指标：** 同一变更中，从 `intent.md` 提交到 `spec.md` 提交的经过时间（两个 git 时间戳），与旧的需求加设计周期比较。
@@ -267,12 +266,12 @@ AI-native Both phases happen in a single prompted session. Claude takes intent.m
 Prerequisites Write an intent.md file, with brand, security, compliance, and UX policies written as skills.
 > ---
 
-# Lagging indicator（03 构建：Build）
+# 4、Lagging indicator（03 构建：Build）
 
 Infrastructure A product owner with Claude access. No engineering skill is required.
 > 没有被接受的计划，就不进行实现。组织知识变成智能体可读取的文件，护栏以代码方式运行，而不是依赖习惯。
 
-## Requirements and design（将 Claude Code plan mode 作为默认起点）
+## 4.1、Requirements and design（需求与设计）
 
 The product owner opens a session with the organization's skills available and attaches the intent.md .
 > 工程师以 plan mode 启动 Claude Code 会话，将第 2 阶段的已批准 `spec.md` 交给 Claude，让它访谈自己，反复迭代计划，直到工程师满意。
@@ -282,7 +281,7 @@ The product owners prompt points at the intent.md , names the constraints, and d
 The same product owner reviews the spec against the idea. Does the spec solve the stated problem, and are the open questions from intent.md answered or carried forward?
 > - **AI 原生方式：** 工作从书面计划开始。Claude 在 plan mode 中读取代码库但不能修改任何内容。工程师在代码编写前纠正计划，并将批准版本提交为 `plan.md`，供后续阶段检查。
 
-### Claude Code plan mode as the default starting point（如何开始）
+### 4.1.1、Claude Code plan mode as the default starting point（将 Claude Code plan mode 作为默认起点）
 
 Work through the flagged concerns first as they are the points an analyst would have escalated. The product owner resolves each one with its policy owner before engineering sees the spec.
 > **前置条件：** intent 工件（如 `intent.md` 或 `spec.md`，如果存在）以及 `CLAUDE.md` 文件会有帮助。
@@ -290,7 +289,7 @@ Work through the flagged concerns first as they are the points an analyst would 
 Commit spec.md alongside intent.md . The file pair records what was asked for and what was decided.
 > **基础设施：** 能访问仓库的 Claude Code。
 
-### Claude Code on auto mode（如何执行）
+### 4.1.2、Claude Code on auto mode（如何执行）
 
 The product owner decides whether the spec and intent progress to build, consulting a technical lead for anything the organization classes as higher risk. A human team mate always makes this call, and accepting the spec is what starts the plan mode play in Stage 3: Build.
 > 1. 工程师以 plan mode 启动 Claude 会话。
@@ -330,19 +329,19 @@ test_status.py covers the four claim states; screenshot matches the
 approved mock.
 ```
 
-### Sidebar Legacy systems and the source of truth（治理考虑）
+### 4.1.3、Sidebar Legacy systems and the source of truth（侧栏：遗留系统和事实来源）
 
 Engineers start Claude Code sessions in plan mode , give Claude the approved spec.md from Stage 2: Design, and let it interview them, iterating on the plan until the engineer is happy with it.
 > 设计评审发生在代码生成前，此时改变方向仍只是编辑文档。Plan mode 本身强制了这一点，因为在工程师接受计划之前，Claude 不能编辑文件。计划及其修订、谁接受了它，都会被记录。常规变更由工程师批准；组织归类为高风险的内容则交给技术负责人或架构师。
 
-### Skills as institutional knowledge（如何衡量）
+### 4.1.4、Skills as institutional knowledge（Skills 作为组织知识）
 
 Traditional An engineer reads the design and starts writing code. How the change will be made, down to which files and which tests, stays in the engineer's head or at best a ticket comment. Nobody else can review it. The first thing a reviewer sees is the finished diff, and by then rework is slow.
 > - **领先指标：** 从第一次实现 pass 就能合并的变更比例，以及从计划批准到 PR 合并的时间；所需数据应在 PR metadata 中。
 AI-native Work starts with a written plan that Claude produces in plan mode, where it can read the codebase without changing anything. The engineer corrects the plan before code is written, and the approved version is committed as plan.md for later stages to check against.
 > - **滞后指标：** 每个变更的返工周期，同样来自 PR metadata；以及合并后的 diff 仍然匹配已提交 `plan.md` 的频率。
 
-## Hooks as build-time guardrails（Claude Code auto mode）
+## 4.2、Hooks as build-time guardrails（Hooks 作为构建期护栏）
 
 Prerequisites The intent artifact ( intent.md or spec.md ) if one exists, and the CLAUDE.md file helps.
 > Claude Code 也可以运行在 auto mode。工程师批准计划并迭代满意后，Claude 可以在每次修改时不再逐一提示，而是直接应用变更。随着后续 play 中的护栏成熟——调优后的 `CLAUDE.md`、编码政策的 skills、阻止不安全行为的 hooks、以及 Claude 可运行的测试套件——auto-accept 会成为常规工作的默认方式：紧凑的 `spec.md`、较小的爆炸半径、已有测试覆盖的代码。
@@ -350,7 +349,7 @@ Prerequisites The intent artifact ( intent.md or spec.md ) if one exists, and th
 Infrastructure Claude Code with access to the repository.
 > 变化的方向是：用户不再盯着智能体编辑并逐个评审动作，而是在更长的自主会话结束后评审工件。Auto-accept 模式结合 worktrees 还能进一步实现个人和团队层面的并行化，是让 SDLC 自主运行并闭环的基础。
 
-## Parallel sessions and subagents（侧栏：遗留系统和事实来源）
+## 4.3、Parallel sessions and subagents（并行会话与 subagents）
 
 The engineer starts the session in plan mode with Claude.
 > 适用于流程产生的每个工件。
@@ -371,26 +370,26 @@ Accept the plan and let Claude implement. With a solid plan, the implementation 
 When implementation departs from the plan, update plan.md in the same commit. Consider using a hook to enforce synchronization between the two.
 > 遗留系统和 Markdown-first 系统可以共存，只要二者之间有链接，或者明确指定了一个事实来源。
 
-## Give Claude a feedback loop（`CLAUDE.md`）
+## 4.4、Give Claude a feedback loop（给 Claude 一个反馈循环）
 
 What it looks like (plan.md)
 > `CLAUDE.md` 向 Claude 提供新成员需要知道的上下文，包括约定、命令、架构，以及团队最常遇到的错误。过去存在人脑和 wiki 中的知识，现在变成智能体在每次会话开始时读取的文件，由整个团队维护，并在每次出现错误时迭代。
 
-### Continuous evals in CI（如何开始）
+### 4.4.1、Continuous evals in CI（CI 中的持续 evals）
 
-# Plan: claims status self-service (from intent.md 2026-06-02)
+# 5、Plan: claims status self-service（from intent.md 2026-06-02）
 > **前置条件：** 无。
 
-## Files that change
+## 5.1、Files that change（变更文件）
 > **基础设施：** 一个仓库、已安装 Claude Code，以及一位熟悉代码库的工程师。
 
-### AI in the PR review loop（如何执行）
+### 5.1.1、AI in the PR review loop（PR review 循环中的 AI）
 
 portal/src/claims/StatusPanel.tsx (new), claims-api/routes/status.py,
 > 1. 在仓库中运行 `/init`。Claude 会根据它发现的内容生成初始 `CLAUDE.md`。
 claims-api/tests/test _status.py
 > 2. 精简生成文件，只保留新成员第一天需要知道的内容：构建、测试、lint 命令；重要约定；Claude 经常搞错的事项。
-## Order of work
+## 5.2、Order of work（工作顺序）
 > 3. 将 `CLAUDE.md` 提交到仓库根目录，让整个团队共享一个版本，像代码一样评审其变更。
 1. Add the status endpoint behind existing auth.
 > 4. 一个有用的规则是：当 Claude 同一个错误犯了两次，就把修正写入 `CLAUDE.md`。
@@ -423,22 +422,22 @@ adapters/ talks to external systems.
 - The legacy v1/ package is frozen; changes go in v2/.
 ```
 
-### Hooks as approval gates（治理考虑与衡量）
+### 5.2.1、Hooks as approval gates（Hooks 作为审批 gate）
 
-## Risks
+## 5.3、Risks（风险）
 > `CLAUDE.md` 受版本控制，因此智能体遵循的指令可被评审和审计。团队约定通过该文件应用，文件变更记录在 git 历史中，由 code owners 在 PR review 中批准。
 
 The claims-core API rate-limits at 50 rps; the panel must cache.
 > - **领先指标：** Claude 重复犯本应由 `CLAUDE.md` 捕获的错误的频率。
-## Proof
+## 5.4、Proof（验证）
 > - **滞后指标：** 新团队成员第一次合并 PR 的时间。
 
-## Worked example Managed settings for a regulated enterprise（Skills 作为组织知识）
+## 5.5、Worked example Managed settings for a regulated enterprise（Skills 作为组织知识）
 
 test_ status.py covers the four claim states; screenshot matches the
 > Skills 是组织将机构知识操作化的方式。指令是显式的、受版本控制的、可广泛应用的，并且在政策变化时集中更新。经验法则是：需要一致应用的机构知识写成 skill；属于 `CLAUDE.md` 或 prompt 的组件不要写成 skill。
 
-### CI/CD integration and deployment（如何执行）
+### 5.5.1、CI/CD integration and deployment（CI/CD 集成与部署）
 
 approved mock. Governance considerations
 > 1. 选择一项今天执行不一致的知识，例如安全标准、API 设计约定或品牌规则。
@@ -477,19 +476,19 @@ appear in logs or error messages.
 Run scripts/check-endpoints.sh and include its output in your summary.
 ```
 
-### Maintenance and closing the loop（治理考虑）
+### 5.5.2、Maintenance and closing the loop（维护与闭环）
 
 Existing SDLC processes likely already track artifacts, just not in markdown files. Work items may be in Jira, requirements in a tool with regulatory traceability built in, designs in Figma, and change approvals with a change board. Those systems are hard to displace because auditors and regulators already accept them and other teams depend on them, so the AI-native SDLC has to fit around what exists.
 > Skill 是一种控制，但属于建议性控制。它会让 Claude 更可能在写代码时应用政策，但不能强制会话合规。必须始终成立的政策，需要 skill 背后有确定性机制，例如阻止动作的 hook，或在 PR 中重新检查政策的 review pass。Skill 让违规变少，hook 让违规几乎不可能发生。Skill 调用会记录在会话 traces 中，政策 owner 像评审代码一样评审 skill 变更。
 
-### Closing the loop（如何衡量）
+### 5.5.3、Closing the loop（闭环）
 
 When transitioning to the AI-native SDLC, for every artifact the process produces, name one system as the source of truth, with everything else holding a copy or a link to the original. The configurations below can be set up to have one source of truth, with the choice differing per artifact:
 > - **领先指标：** 从政策 owner 批准政策变更，到更新后的 skill 合并的时间。
 The repo as the source of truth. The markdown artifacts are the authoritative record and the legacy system references files within commits. This can be one of the cleanest configurations for engineering-led organizations, as all records live in one tool with one timestamp authority.
 > - **滞后指标：** PR review 中引用该政策的发现应趋近于零。若没有下降，要么 skill 没有触发，要么其文本已经偏离官方政策。
 
-## Examples（Hooks 作为构建期护栏）
+## 5.6、Examples（Hooks 作为构建期护栏）
 
 The legacy system as the source of truth. Jira, ServiceNow, or the requirements tool holds the authoritative record and the markdown artifacts are working copies. Claude reads the record at the start of the session and writes the outcome back through an MCP connector in the same session that produced the spec or the plan.
 > Skill 是建议性控制，hook 是背后的确定性层。Claude 在实现过程中大多数动作是文件编辑和 shell 命令，因此构建阶段通常是 hooks 最常触发的地方。
@@ -510,7 +509,7 @@ Prerequisites None.
 Infrastructure A repo, Claude Code installed, and one engineer who knows the codebase well.
 > 需要人类批准的 hook 应放在第 5 阶段部署中的 gate，而不是构建阶段；否则审批提示会把人重新放回所有并行会话的关键路径。
 
-## Recurring codebase scans（并行会话与 subagents）
+## 5.7、Recurring codebase scans（周期性代码库扫描）
 
 Run /init in the repo. Claude generates a starting CLAUDE.md from what it finds.
 > 一个工程师可以同时驱动多个工作流。
@@ -524,15 +523,15 @@ Check CLAUDE.md into git at the repo root so the whole team shares one version a
 A working rule helps here. When Claude makes a mistake twice, the correction goes into CLAUDE.md .
 > 并行会话提高单个工程师同时推进的任务数量；subagents 则让每个会话专注于自身任务。工程师的职责转向引导和评审它们。
 
-### Governance considerations（如何执行）
+### 5.7.1、Governance considerations（治理考虑）
 
 Keep it under a page, because Claude reads all of it at the start of a session and anything stale is taking up context for no benefit.
 > 1. 工程师根据 plan mode 生成的计划，将工作拆分为修改不同文件的任务。共享文件的任务应放在同一会话中顺序执行。
 What it looks like (CLAUDE.md)
 > 2. 每个并行任务获得自己的 worktree，例如在一个终端运行 `claude --worktree feature-auth`，另一个终端运行 `claude --worktree fix-rate-limit`。Worktree 是独立分支上的独立 checkout，可防止会话相互冲突。
-# Payments service
+# 6、Payments service（支付服务）
 > 3. 先从两三个会话开始。实际上限取决于一个人能认真评审多少工作流，只有在 review 跟得上时才增加会话数量。
-## Commands
+## 6.1、Commands（命令）
 > 4. 将重复任务变成 subagents，定义在 `.claude/agents/` 的 Markdown 文件中，包含名称、何时使用、可访问工具。例如：代码简化器、验证器、研究员。将定义提交到 git，让团队共享。
 
 - Build: make build
@@ -551,30 +550,30 @@ nearest neighboring flows. Report what you ran, what you saw, and any
 behavior that does not match plan.md. Do not fix anything; report only.
 ```
 
-### Claude on call with Claude Tag（治理与衡量）
+### 6.1.1、Claude on call with Claude Tag（Claude Tag 参与 on-call）
 
 - Test: make test (unit), make itest (integration, needs docker)
 > 会话越多，输出越多，因此控制必须来自仓库中的配置。Hooks 和权限设置适用于所有会话，且每个会话的行为会被记录并归因到运行它的工程师。
 
 - Lint: make lint (runs in CI; fix before pushing)
 > - **领先指标：** 在 review 质量保持的情况下，每位工程师的并发会话数；以及每天花在引导而非等待上的时间。
-## Conventions
+## 6.2、Conventions（约定）
 > - **滞后指标：** 每位工程师每周合并的变更数量，并与返工率一起分析。
 
 - Java 21 , Spring Boot 3. No new Lombok.
 > ---
 
-# Resources and acknowledgments（04 测试：Test）
+# 7、Resources and acknowledgments（资源与致谢）
 
 - Money is always BigDecimal, never double.
 > 每个会话在人类看到之前先检查自己的工作；引导智能体的配置像其写出的代码一样接受回归测试。
 
-## 给 Claude 一个反馈循环
+## 7.1、Give Claude a feedback loop（给 Claude 一个反馈循环）
 
 - Every endpoint needs an integration test in src/itest.
 > 始终给 Claude 一种验证自己工作的方式：测试、构建或截图 diff。会话在人类看到之前先检查自己的工作，并修复自己的错误。
 
-## Architecture
+## 7.2、Architecture（架构）
 > 反馈循环不要与第 3 阶段中的 verifier subagent 混淆。反馈循环贯穿整个任务，可反复运行。Verifier subagent 则是在会话认为工作完成后，用新上下文窗口包装最终检查，避免判断被产生代码时的假设污染。
 
 - api/ holds REST controllers, core/ holds domain logic,
@@ -582,11 +581,11 @@ behavior that does not match plan.md. Do not fix anything; report only.
 adapters/ talks to external systems.
 > - **AI 原生方式：** 会话在交给人之前就拥有检查自身工作的能力。运行测试、构建、截图。Claude 迭代直到检查通过，因此到达工程师面前的内容已经通过了验证。
 
-### 如何执行
+### 7.2.1、How to execute it（如何执行）
 
 - Kafka events are defined in schemas/; never edit generated classes.
 > 1. 如果今天检查工作需要一串命令和环境知识，把它包装成一个单一目标，例如 `make test` 或 `npm test`，并在失败时返回非零退出码。
-## Things Claude gets wrong
+## 7.3、Things Claude gets wrong（Claude 常犯的错误）
 > 2. 在 `CLAUDE.md` 的 Commands 部分列出每个命令，以及健康输出示例。
 - Do not bump dependency versions; the platform team owns them.
 > 3. 陈述一个可量化目标，让 Claude 无需询问即可检查工作，例如“`test_status.py` 中所有测试通过”、“截图匹配附加 mock”、“endpoint 返回 200 且包含新字段”。
@@ -611,7 +610,7 @@ Run all three before reporting any task complete, and paste the output.
 If a test fails, fix the code, not the test.
 ```
 
-### 治理与衡量
+### 7.3.1、治理与衡量（治理与衡量）
 
 Prerequisites None required. Having a CLAUDE.md helps, because it keeps the agent's working knowledge in the repo, but a skill does not depend on it.
 > 被强制的是：任务报告完成前的验证，以及修复任务中阻止智能体编辑测试文件的限制。证据是 Claude 运行并粘贴的 `make test` 输出、构建日志或截图 diff，来自实际工具链。记录位置包括会话 transcript、OpenTelemetry export，以及 PR check run。
@@ -621,7 +620,7 @@ Infrastructure One policy with a named owner and a written source of truth.
 Pick one piece of knowledge that is enforced inconsistently today. This could be a security standard, an API design convention, or a brand rule.
 > - **滞后指标：** 每个 PR 的 review 时间，以及变更失败率。
 
-## CI 中的持续 evals
+## 7.4、Continuous evals in CI（CI 中的持续 evals）
 
 Write it as a skill, a folder containing a SKILL.md whose frontmatter says when it triggers and whose body says what to do. An engineer writes it from the policy owner's source of truth, using Claude to help.
 > Evals 是 AI 原生版本的阶段关卡 QA。实践中，它意味着当智能体配置发生变化时运行一套测试：换新模型、改 prompt 时，eval suite 会判断智能体是否仍以相同标准完成工作。
@@ -629,7 +628,7 @@ Write it as a skill, a folder containing a SKILL.md whose frontmatter says when 
 Put the skill in the repo at .claude/skills/<name>/ so it ships with the code, or distribute it organization-wide through a plugin .
 > Evals 应被视为活的测试套件。随着模型进步，曾经能区分好坏的案例可能失效，新的案例应来自持续监控。
 
-### 如何执行
+### 7.4.1、How to execute it（如何执行）
 
 Test that the skill triggers. Ask Claude to do the relevant task in different ways and confirm the skill loads each time.
 > 1. 平台工程师收集最近真实工作中的 20 到 50 个任务，以及其预期/已接受结果。
@@ -670,25 +669,25 @@ jobs:
           done
 ```
 
-### 治理与衡量
+### 7.4.2、治理与衡量（治理与衡量）
 
 modifying an external-facing endpoint, reviewing API code, or
 > Evals 给 QA 一个能跟上智能体输出速度的 gate。通过率阈值作为 merge check 执行，运行结果被记录以便长期比较，配置变更由负责团队批准。
 
 generating an OpenAPI spec.
 > - **领先指标：** 每次运行报告的 eval 通过率趋势，以及生产事故变成永久 eval 所需时间。
-# Secure API review
+# 8、Secure API review（安全 API 审查）
 > - **滞后指标：** CI 中捕获的回归与生产中发现的回归之间的对比。
 
 When you create or change an API endpoint:
 > ---
 
-# 05 部署：Deploy
+# 9、部署：Deploy（部署：Deploy）
 
 1. Authentication: every endpoint requires the gateway JWT;
 > 评审双向运行，治理在智能体行动时被强制执行。智能体可以做到生产 gate 之前的一切，但不能越过它。
 
-## PR review 循环中的 AI
+## 9.1、AI in the PR review loop（PR review 循环中的 AI）
 
 no anonymous routes outside /health.
 > Claude 既给出评审，也接收评审。它根据组织政策评审传入 PR，并处理自己 PR 上的 review comments。这使工程师能专注于 PR review 中的行为判断，本质上就是判断意图和风险。
@@ -698,7 +697,7 @@ no anonymous routes outside /health.
 schema and reject unknown fields.
 > - **AI 原生方式：** 所有 PR 都获得相同的评审 passes，发现按严重性排序。人类注意力上移到：变更是否实现了计划意图、风险是否可接受。
 
-### 如何执行
+### 9.1.1、How to execute it（如何执行）
 
 3. Audit: every state-changing endpoint emits an audit event with
 > 1. 最快的起点是托管 Code Review 服务。管理员启用并选择仓库。当需要控制流水线，或要通过自己的云协议路由 API 调用时，可在自己的 CI 中运行 `claude-code-action`。
@@ -735,7 +734,7 @@ Report at most five nits per review; summarize the rest as a count.
 Generated files under src/gen/ and anything CI already enforces.
 ```
 
-### 治理与衡量
+### 9.1.2、治理与衡量（治理与衡量）
 
 Lagging indicator PR reviews findings that cite the policy, which should fall towards zero once the skill is applying the policy while the code is written. Where the findings don't fall towards zero, either the skill isn't triggering or its text has drifted from the official policy.
 > 职责分离得以保留，因为写代码的智能体无法批准代码。`REVIEW.md` 中的评审政策应用到所有 PR，发现、修复、评分和批准都记录在 PR 历史中，因此 PR 本身就是审计记录。批准由人类通过分支保护完成，并由 findings 辅助判断。
@@ -745,7 +744,7 @@ A skill is an advisory control while a hook is the deterministic layer behind it
 Build-phase hooks can:
 > - **滞后指标：** 合并前捕获的缺陷和漏洞，与逃逸到生产环境的缺陷和漏洞对比。
 
-## Hooks 作为审批 gate
+## 9.2、Hooks as approval gates（Hooks 作为审批 gate）
 
 Block edits to protected paths such as generated classes or a frozen package;
 > 构建阶段使用 hooks 作为护栏，在没有人参与的情况下允许或阻止动作。Hook 也可以“询问”：暂停动作，直到特定人员批准。这正是发布 gating 所需。
@@ -753,7 +752,7 @@ Block edits to protected paths such as generated classes or a frozen package;
 Run the formatter and linter after file edits so drift never accumulates;
 > 该 play 位于第 5 阶段部署，因为 release gate 是最清晰的场景。但 hooks 并非部署专用：凡是 Claude 行动的地方都可以运行。例如，hooks 可以在构建阶段阻止没有变更工单的 migration 和 infra 修改，也可以在测试阶段阻止智能体编辑测试文件。
 
-### 如何执行
+### 9.2.1、How to execute it（如何执行）
 
 Keep credentials out of the diff.
 > 1. 工程领导与变更管理、合规团队列出必须保留的人类审批关卡，例如变更管理签字、发布授权、受保护路径编辑。
@@ -798,7 +797,7 @@ fi
 exit 0
 ```
 
-### 企业受监管场景示例
+### 9.2.2、企业受监管场景示例（企业受监管场景示例）
 
 Parallel sessions raise the number of tasks an engineer can have in flight, while subagents keep each session focused on its own task. The engineer's job is steering and reviewing all of them.
 > Managed settings 可由平台团队通过 MDM 或 admin console 部署，工程师无法编辑或覆盖。示例配置包括：禁止读取 `.env` 和 secrets、禁止任意 WebFetch/curl/wget、只允许 `git`、`make build/test/lint` 等安全命令；禁止绕过权限；启用 sandbox；限制网络域名；拒绝读取 `~/.ssh`、`~/.aws/credentials` 并剥离敏感环境变量；只允许 managed hooks、approved plugin marketplace、managed MCP servers；要求最低 Claude Code 版本。
@@ -828,7 +827,7 @@ name: verifier
 description : Runs the app and checks the change works before the session
 > 这应被视为可裁剪的起点，而不是可直接照抄的建议。每个 deny 都会牺牲能力，正确平衡取决于仓库的数据分类。
 
-## CI/CD 集成与部署
+## 9.3、CI/CD integration and deployment（CI/CD 集成与部署）
 
 reports done
 > 在 CI/CD 流水线中非交互运行 Claude Code，用 sandbox 让长时间运行的智能体安全执行，通过 MCP 暴露部署，并在智能体真正需要之前排练 rollback 路径。
@@ -838,7 +837,7 @@ tools : Bash, Read
 Start the app with make run. Exercise the changed behavior and the two
 > - **AI 原生方式：** Claude 在 pipeline 中非交互执行判断步骤，在带 scoped credentials 的 sandbox 中运行。部署工具通过 MCP 暴露给智能体，因此写代码、测试的 workflow 也能在组织定义的环境 gates 内发布和回滚。
 
-### 如何执行
+### 9.3.1、How to execute it（如何执行）
 
 nearest neighboring flows. Report what you ran, what you saw, and any
 > 1. 平台工程师从只读判断步骤开始：在 pipeline job 中使用 `claude -p` triage 失败构建、总结 flaky test、草拟 changelog。
@@ -865,7 +864,7 @@ Every session checks its own work before a human sees it, and the configuration 
     three-line summary for the PR thread." >> triage.md
 ```
 
-### 治理与衡量
+### 9.3.2、治理与衡量（治理与衡量）
 
 Always give Claude a way to verify its own work, whether tests, a build, or a screenshot diff. A session checks its own work and fixes its own mistakes before an engineer sees them.
 > 治理原则是：智能体可以行动到生产 gate 之前，但不能越过它。分支保护确保智能体写入内容都变成 PR，不能直达 main；production deploy hook 阻止发布，直到指定 release manager 授权；每个非交互运行都使用智能体自己的身份，pipeline 日志可区分智能体做了什么与触发它的工程师做了什么。
@@ -878,12 +877,12 @@ Traditional The signal that code works arrives late. CI minutes later, a tester 
 AI-native The session is given a way to check its own work before a person sees it. Run the tests, run the build, take the screenshot. Claude iterates until the check passes, so what reaches the engineer has already passed it. Setting the loop up falls to the engineer running the session, and the steps below are written for them.
 > ---
 
-# 06 维护：Maintain
+# 10、维护：Maintain（维护：Maintain）
 
 Prerequisites None.
 > 循环闭合。一个触发器在没有人类处于调用路径的情况下调用 Claude，而 Claude 发现的内容会作为 `intent.md` 重新进入流水线。
 
-## 维护与闭环
+## 10.1、Maintenance and closing the loop（维护与闭环）
 
 Infrastructure A test suite and a build that run locally with one command each. For the UI work, a way for Claude to see the result is crucial, either a browser tool or a screenshot utility wired in via MCP.
 > 前文讨论的是如何将 Claude 加入 SDLC 的每个阶段，而每个阶段都需要人类启动初始步骤。本阶段则转向自主运行 Claude 来闭合循环。
@@ -896,12 +895,12 @@ In the CLAUDE.md 's Commands section, list each command with an example of a hea
 State a target and make it quantifiable so Claude can check the work without asking you, for example: "All tests in test_status.py pass," "the screenshot matches the attached mock," or "the endpoint returns 200 with the new field".
 > - **AI 原生方式：** 控制区间突破、工单、频道消息或计划任务等触发器，可以在没有人类处于路径中的情况下调用 Claude。Claude 诊断问题，只通过受 gate 约束的路径行动，并将发现写成 `intent.md`，进入前文阶段。人类负责 triage 和 review，而不再负责启动。
 
-## 闭环
+## 10.2、Closing the loop（闭环）
 
 For bug fixes, write the failing test first. Ask Claude to reproduce the bug as a test, run it, and confirm it fails for the reason you expect. Commit that test. Only then ask Claude to make it pass without editing the test, with the test-file hook from the final step enforcing the restriction. A test that existed before the fix, and that the agent couldn't rewrite, is proof the bug is gone.
 > 确定性脚本监控生产环境，并在控制区间被突破时调用 Claude。控制区间突破监控是自主循环的一个有用示例。
 
-### 如何执行
+### 10.2.1、How to execute it（如何执行）
 
 For UI work, close the loop with a visual check. Give Claude a browser or screenshot tool, give it the mock, and let it iterate. Implement, screenshot, compare, and adjust. Two or three rounds is normal, and the result should improve with each one.
 > 1. 服务 owner 或平台工程师选择一个有稳定滚动基线的指标，如 CI 测试失败率、部署后 5xx 率、PR 周期时间。
@@ -911,7 +910,7 @@ Finally, the loop itself needs protecting, because an agent fixing code must not
 > 3. 响应等级定义在版本化配置中，例如 `bands.yaml`：1σ 只记录日志，2σ 调用 Claude 只读诊断，3σ 允许 Claude 行动，但只能打开进入 review gate 的 PR 或触发预先批准的 runbook。
 What it looks like (CLAUDE.md verification block)
 > 4. 触发层可以是 GitHub/GitLab scheduled workflow、来自现有监控栈的 webhook，或网络内 Cron Job。Claude 以无状态方式运行，可以是 CI runner 上的非交互步骤，也可以是 sandboxed container 中的 Agent SDK 服务。
-## Verifying your work
+## 10.3、Verifying your work（验证你的工作）
 > 5. 智能体将诊断写成第 1 阶段 Plan 格式的 `intent.md`，包含异常和证据、预期结果、受影响系统、开放问题。从那里开始，发现像其他变更一样进入流水线。
 - Build: make build (must finish with "Build succeeded" )
 > 6. 服务 owner 或 on-call 工程师 triage 队列：立即修复、排期或驳回。驳回会用于调优控制区间并减少噪声。
@@ -931,7 +930,7 @@ tiers:
   3sigma: { action: propose, routes: [ pull_request, runbook:rollback-deploy ] }
 ```
 
-### 治理与衡量
+### 10.3.1、治理与衡量（治理与衡量）
 
 Run all three before reporting any task complete, and paste the output.
 > 等级边界由版本化配置强制执行，权限和 managed settings 拒绝生产访问。调用、发现和 triage 决策都带时间戳记录。服务 owner 负责 triage 和批准发现，后续变更经过正常 PR review gate，智能体可触发的 runbooks 预先获得批准。
@@ -954,7 +953,7 @@ Leading indicator First-pass CI success rate for agent-written changes, which th
 Lagging indicator Review time per PR (from the PR metadata), which should fall once the tests catch what reviewers used to catch, and the change failure rate from an incident tracker.
 > 检测保持确定性。Claude 只在控制区间突破后被调用，响应等级决定它可以做什么。
 
-## 周期性代码库扫描
+## 10.4、Recurring codebase scans（周期性代码库扫描）
 
 Evals are the AI-native equivalent of stage-gate QA. In practice that means a suite that runs whenever the agent's configuration changes. When a new model is swapped in or a prompt is rewritten, the eval suite says whether the agent still does the work to the same standard.
 > 安全扫描是关于某个代码库在某个模型下的时间点声明，而这两部分都会过时：代码每周都在变化，每一代模型也能发现前一代漏掉的漏洞。AI 原生答案是按计划运行扫描，让发现通过与其他代码变更相同的 gate。
@@ -967,7 +966,7 @@ Depending on the use case, some teams may prefer to run these evals offline on a
 Prerequisites The CLAUDE.md and feedback loop (Stage 4: Test).
 > - **AI 原生方式：** 扫描按计划针对每个连接仓库运行，使用可用的最强模型，finding 在人类阅读前先验证。每个 finding 像控制区间突破一样处理：一 PR 能完成的修复进入 review gate；更大的问题写成 `intent.md`。
 
-### 如何执行
+### 10.4.1、How to execute it（如何执行）
 
 Infrastructure CI that can run Claude Code non-interactively, and an API key with budget for eval runs.
 > 1. 安全负责人连接仓库，并按 repo、service 或 team 组织为 projects，确保 findings 从一开始就有明确 ownership。
@@ -986,7 +985,7 @@ What it looks like (.github/workflows/agent-evals.yml)
 name: Agent evals
 > 8. 将 findings 导出为 CSV 或 Markdown，或使用 webhooks 与组织现有 tracker 和审计系统集成。
 
-### 治理与衡量
+### 10.4.2、治理与衡量（治理与衡量）
 
 on:
 > 扫描在组织 admin 控制下运行：连接哪些仓库、谁持有扫描 seat、spend limit 都集中设置。每个 finding 有验证结果和置信评分，每个 dismissal 有原因，因此扫描历史就是发现、修复和有意识接受风险的审计记录。修复通过 PR review gate 和分支保护进入生产，而不是由扫描本身直接发布。
@@ -996,7 +995,7 @@ pull_request:
 paths: [ 'CLAUDE.md' , '.claude/**' ]
 > - **滞后指标：** 定期扫描发现的漏洞与生产环境或外部报告发现的漏洞对比；以及经过多次扫描的仓库中，每次扫描 findings 数量趋势。
 
-## Claude Tag 参与 on-call
+## 10.5、Claude on call with Claude Tag（Claude Tag 参与 on-call）
 
 schedule:
 > 事故也可能通过 Slack、Teams 等工作沟通应用进入。事故可能是一条晚上 10 点发在 incident channel 中的紧急修复消息，现在可以立即被处理。Claude Tag（当前 Slack public beta）让 Claude 以自己的身份成为频道成员，因此每个新事故都会有一个 first responder，而响应本身也成为未来事故循环和记忆的一部分。
@@ -1013,7 +1012,7 @@ evals:
 runs-on: ubuntu-latest
 > ---
 
-## 结语
+## 10.6、Closing thoughts（结语）
 
 steps:
 > 模型和 harness 已经变得更先进，使组织不仅能改变代码生产方式，也能改造整个软件开发生命周期。
@@ -1030,7 +1029,7 @@ steps:
 env:
 > ---
 
-## 资源与致谢
+## 10.7、Resources and acknowledgments（资源与致谢）
 
 ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 > 平台团队设置这些控制所需的文档大致包括：
