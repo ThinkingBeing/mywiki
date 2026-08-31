@@ -526,7 +526,8 @@ A working rule helps here. When Claude makes a mistake twice, the correction goe
 ### 5.7.1、Governance considerations（治理考虑）
 
 Keep it under a page, because Claude reads all of it at the start of a session and anything stale is taking up context for no benefit.
-> 1. 工程师根据 plan mode 生成的计划，将工作拆分为修改不同文件的任务。共享文件的任务应放在同一会话中顺序执行。
+
+1. 工程师根据 plan mode 生成的计划，将工作拆分为修改不同文件的任务。共享文件的任务应放在同一会话中顺序执行。
 
 示例 `CLAUDE.md`：
 
