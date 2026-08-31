@@ -527,12 +527,16 @@ A working rule helps here. When Claude makes a mistake twice, the correction goe
 
 Keep it under a page, because Claude reads all of it at the start of a session and anything stale is taking up context for no benefit.
 > 1. 工程师根据 plan mode 生成的计划，将工作拆分为修改不同文件的任务。共享文件的任务应放在同一会话中顺序执行。
-What it looks like (CLAUDE.md)
-> 2. 每个并行任务获得自己的 worktree，例如在一个终端运行 `claude --worktree feature-auth`，另一个终端运行 `claude --worktree fix-rate-limit`。Worktree 是独立分支上的独立 checkout，可防止会话相互冲突。
+
+示例 `CLAUDE.md`：
+
+2. 每个并行任务获得自己的 worktree，例如在一个终端运行 `claude --worktree feature-auth`，另一个终端运行 `claude --worktree fix-rate-limit`。Worktree 是独立分支上的独立 checkout，可防止会话相互冲突。
+3. 先从两三个会话开始。实际上限取决于一个人能认真评审多少工作流，只有在 review 跟得上时才增加会话数量。
+4. 将重复任务变成 subagents，定义在 `.claude/agents/` 的 Markdown 文件中，包含名称、何时使用、可访问工具。例如：代码简化器、验证器、研究员。将定义提交到 git，让团队共享。
+
 # 6、Payments service（支付服务）
-> 3. 先从两三个会话开始。实际上限取决于一个人能认真评审多少工作流，只有在 review 跟得上时才增加会话数量。
+
 ## 6.1、Commands（命令）
-> 4. 将重复任务变成 subagents，定义在 `.claude/agents/` 的 Markdown 文件中，包含名称、何时使用、可访问工具。例如：代码简化器、验证器、研究员。将定义提交到 git，让团队共享。
 
 - Build: make build
 > 示例 `.claude/agents/verifier.md`：
