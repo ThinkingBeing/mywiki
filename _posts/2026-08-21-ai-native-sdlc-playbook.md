@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "解读 Anthropic《The AI-Native SDLC playbook》：AI 原生 SDLC 实战手册中英对照"
+title: "【翻译】解读 Anthropic《The AI-Native SDLC playbook》：AI 原生 SDLC 实战手册中英对照"
 description: "Anthropic 认为 AI Agent 已让编码不再是最大瓶颈，企业需要围绕 intent.md、spec.md、plan.md、反馈闭环、Hooks、Skills、evals 和人工治理重构整个 SDLC。"
 date: 2026-08-21
 created_at: 2026-08-31 10:23:16 +0800
